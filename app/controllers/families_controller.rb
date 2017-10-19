@@ -1,0 +1,34 @@
+class FamiliesController < ApplicationController
+  def index
+  	@family = Family.all
+    @messages = Message.all	  		
+  end
+
+  def show
+    @family = Family.find(params[:id])
+  end
+
+  def new
+    @family = Family.new
+  end
+
+  def create
+    @family = Family.new(family_params)
+
+    if @family.save
+      redirect_to family_path(@family.id)
+    else 
+      render 'new'
+    end 
+  end
+
+  def destroy
+    @family = family.find(param[:id])
+    if @family.destroy
+      redirect_to family_path
+    else
+      redirect_to family_path
+    end
+  end
+
+end

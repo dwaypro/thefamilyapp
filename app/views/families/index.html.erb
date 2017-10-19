@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		
+
+		<div id="messages">
+			<% @messages.each do |message| %>
+			 <p> <%=message.content%></p>
+			<%end %>
+		</div>
+
+		<form>
+			<label> Say Something: </label> <br>
+			<input type="text" data-behavior="room_speaker">
+		</form>
+
+
+	
+</body>
+</html>
