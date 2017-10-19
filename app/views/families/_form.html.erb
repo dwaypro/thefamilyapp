@@ -1,0 +1,17 @@
+<%= form_for(@family, html: {multipart: true, class: 'form-horizontal form-signin', style: 'width: 300px;'}) do |f|%>
+
+  <h2 class="form-signin-heading">create a family:</h2>
+
+  <div class="field form-group">
+    <%= f.label :name, class: 'col-sm-3 control-label' %>
+    <div class="col-sm-9">
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="actions form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit class: "btn btn-success btn-lg btn-block" %>
+    </div>
+  </div>
+<% end %>

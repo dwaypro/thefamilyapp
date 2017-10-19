@@ -4,7 +4,27 @@
 	<title></title>
 </head>
 <body>
-	welcome to your profile
-	<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<div class="side-bar">
+	<div id="mySidenav" class="sidenav">
+  	<div style="height:26px;">
+  		<div class="family" aria-label="Families">
+  			Families <%= link_to 'new family', new_family_path %>
+  				<% @family.each do |fam| %>
+  				<li> <%= fam.name %> </li>
+  				<% end %>
+  		</div>
+  	</div>
+	</div>
+</div>
+
+<div class="msg_bx text-center">
+	<h1> test </h1>
+	<h1> test </h1>
+	<h1> test </h1>
+	<h1> test </h1>
+	<h1> test </h1>
+
+</div>
+	
 </body>
 </html>

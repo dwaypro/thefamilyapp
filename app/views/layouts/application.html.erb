@@ -9,8 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
     <%= render 'shared/navigation' %>
-    <%= yield %>
+  <body>
+    <div id="main-container" class="container">
+      <p class="notice"><%= notice %></p>
+        <div class="row">
+          <div id="content" class="col-xs-12">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
