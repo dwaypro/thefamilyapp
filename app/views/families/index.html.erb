@@ -11,6 +11,11 @@
 	<title>Live Chat</title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+	<style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+
 </head>
 <body>
 	<div id="live-chat" class="center-block">
@@ -37,5 +42,8 @@
 				</form>
 		</div> <!-- end chat -->
 	</div> <!-- end live-chat -->
+
+<canvas id="gameCanvas" width="480px" height="320px"></canvas>
+<button type="button" id="start" width ="200px" height="100px">Play!</button>
 </body>
 </html>
