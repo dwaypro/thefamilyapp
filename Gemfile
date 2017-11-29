@@ -36,6 +36,11 @@ gem 'bootstrap-sass'
 
 gem 'jquery-rails'
 
+gem 'react-rails'
+
+# gem 'sprockets'
+# gem 'sprockets-es6'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
